@@ -40,6 +40,10 @@ class BTTableViewCell: UITableViewCell {
         cellContentFrame = CGRect(x: 0, y: 0, width: (UIApplication.shared.keyWindow?.frame.width)!, height: self.configuration.cellHeight)
         self.contentView.backgroundColor = self.configuration.cellBackgroundColor
         self.selectionStyle = UITableViewCell.SelectionStyle.none
+        
+        self.textLabel!.layer.borderColor = UIColor.black.cgColor
+        self.textLabel!.layer.borderWidth = 3.0
+        
         self.textLabel!.textColor = self.configuration.cellTextLabelColor
         self.textLabel!.font = self.configuration.cellTextLabelFont
         self.textLabel!.textAlignment = self.configuration.cellTextLabelAlignment
